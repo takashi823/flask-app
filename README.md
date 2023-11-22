@@ -10,9 +10,15 @@ docker-compose up -d
 
 
 プロジェクトフォルダ
-├── _
-│  ├── .gitignore
-│  └── husky.sh
+├── app
+│    ├── models：テーブルのモデルを格納しておくフォルダ
+│    │
+│    ├── static：デザイン（css）の実装フォルダ
+│    │
+│    ├── templates：画面（html）の実装フォルダ
+│  
+└── migration
+│
 └── .gitignore
 └── docker-compose.yml
 └── Dockerfile
