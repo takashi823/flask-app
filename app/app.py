@@ -56,16 +56,15 @@ def create_app():
 
     @app.route("/post", methods=["GET", "POST"])
     @login_required  # @login_requiredのデコレータをつけることで、ログイン状態のみ表示
-    def add_task():
+    def add_post():
         if request.method == "POST":
             postInfo = Post(
                 title=request.form["title"],
                 content=request.form["content"],
             )
-            print(postInfo)
             db.session.add(postInfo)
             db.session.commit()
-            return redirect("/")
+            return redirect("/postlist")
         else:
             return render_template("post.html")
 
