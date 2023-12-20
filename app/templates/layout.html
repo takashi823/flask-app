@@ -23,8 +23,11 @@
 				<a href="#" class="text-sm font-semibold leading-6 text-white">Company</a>
 			</div>
 			<div class="flex flex-1 justify-end">
-				<a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span
-						aria-hidden="true">&rarr;</span></a>
+				{% if current_user.is_authenticated %}
+					<a href="/login" class="text-sm font-semibold leading-6 text-white">ログアウト</a>
+				{% else %}
+					<a href="/signup" class="text-sm font-semibold leading-6 text-white">新規登録</a>
+				{% endif%}
 			</div>
 		</nav>
 	</header>

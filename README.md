@@ -9,20 +9,20 @@ docker-compose up -d
 # フォルダ構成
 
 
-プロジェクトフォルダ
-├── app
-│    ├── models：テーブルのモデルを格納しておくフォルダ
-│    │
-│    ├── static：デザイン（css）の実装フォルダ
-│    │
-│    ├── templates：画面（html）の実装フォルダ
+プロジェクトフォルダ  
+├── app  
+│    ├── models：テーブルのモデルを格納しておくフォルダ  
+│    │  
+│    ├── static：デザイン（css）の実装フォルダ  
+│    │  
+│    ├── templates：画面（html）の実装フォルダ  
 │  
-└── migration
-│
-└── .gitignore
-└── docker-compose.yml
-└── Dockerfile
-└── package-lock.json
-└── package.json
-└── requirements.txt
-└── tailwind.config.js
+└── migration  
+│  
+└── .gitignore  
+└── docker-compose.yml  
+└── Dockerfile  
+└── package-lock.json  
+└── package.json  
+└── requirements.txt  
+└── tailwind.config.js  

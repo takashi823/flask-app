@@ -19,3 +19,7 @@ SQLAlchemy==2.0.23
 typing_extensions==4.9.0
 cryptography==41.0.7
 cffi==1.16.0
+# pip install flask-login flask_wtfで追加
+pycparser==2.21
+Flask-Login==0.6.3
+flask-wtf

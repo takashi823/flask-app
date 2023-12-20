@@ -2,6 +2,7 @@
 volumes
 node_modules
 app/static/dist
+migrations
 
 ### Flask ###
 instance/*
