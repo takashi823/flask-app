@@ -23,3 +23,6 @@ cffi==1.16.0
 pycparser==2.21
 Flask-Login==0.6.3
 flask-wtf
+pre-commit==3.5.0
+flake8
+black
