@@ -1,10 +1,20 @@
 # 起動方法
 最初にプロジェクト直下（docker-compose.ymlのあるフォルダ）で下記コマンドを実行してください。
 
+### コンテナの起動 
+
 ```
 docker-compose up -d
 ```
 ※ -dオプションはつけてもつけなくても問題ないです。
+
+### migrationの設定
+```
+docker-compose exec -it flask flask db init
+docker-compose exec -it flask flask db migrate
+docker-compose exec -it flask flask db upgrade
+```
+
 
 # フォルダ構成
 
